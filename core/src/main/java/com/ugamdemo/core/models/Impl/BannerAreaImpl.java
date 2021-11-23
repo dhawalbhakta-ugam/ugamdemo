@@ -7,10 +7,15 @@ import org.apache.sling.models.annotations.Model;
 
 import javax.inject.Inject;
 
-@Model(adaptables = Resource.class,
+
+
+@Model(resourceType = BannerAreaImpl.RESOURCE_TYPE,
+        adaptables = Resource.class,
         adapters = BannerArea.class,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class BannerAreaImpl implements BannerArea{
+
+    final protected static String RESOURCE_TYPE="ugamdemo/components/content/banner-area";
 
     @Inject
     String title;
