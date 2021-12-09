@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2021-12-08T15:07:25.727+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2021-12-09T10:54:13.398+05:30"
+        cq:lastRolledoutBy="admin"
+        cq:template="/conf/ugamdemo/settings/wcm/templates/custom_responsivetemp"
+        jcr:mixinTypes="[cq:LiveRelationship,cq:LiveSync]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="service "
+        sling:resourceType="ugamdemo/components/page">
+        <root
+            cq:lastRolledout="{Date}2021-12-08T15:07:25.600+05:30"
+            cq:lastRolledoutBy="admin"
+            jcr:lastModified="{Date}2021-12-08T15:07:25.596+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:mixinTypes="[cq:LiveRelationship]"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="ugamdemo/components/container"
+            layout="responsiveGrid">
+            <container
+                cq:lastRolledout="{Date}2021-12-08T15:07:25.607+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:lastModified="{Date}2021-12-08T15:07:25.606+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ugamdemo/components/container">
+                <banner_navigation
+                    cq:lastRolledout="{Date}2021-12-08T15:07:25.611+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2021-06-18T10:00:23.014+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T15:07:25.609+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/banner-navigation"
+                    nav1="Home"
+                    nav2="Services"
+                    path="/content/ugamdemo/us/en/ipage"
+                    title="Services"/>
+                <titletext
+                    cq:lastRolledout="{Date}2021-12-08T15:07:25.614+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2021-06-18T10:02:56.107+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T15:07:25.612+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/titletext"
+                    bottomPadding="true"
+                    sectionGap="true"
+                    text="At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected."
+                    title="My Offered Services"/>
+            </container>
+            <responsivegrid
+                cq:lastRolledout="{Date}2021-12-08T15:07:25.618+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2021-06-16T18:04:05.672+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-08T15:07:25.615+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <services
+                    cq:lastRolledout="{Date}2021-12-08T15:07:25.622+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2021-06-18T10:46:47.652+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T15:07:25.620+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/services"
+                    text="“It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”"
+                    title="Web Design"/>
+                <services_775984337
+                    cq:lastRolledout="{Date}2021-12-08T15:07:25.624+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2021-06-18T10:48:22.839+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T15:07:25.623+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/services"
+                    text="Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades. There is a lot of argument."
+                    title="Clipping Path"/>
+            </responsivegrid>
+            <responsivegrid_1355852908
+                cq:lastRolledout="{Date}2021-12-08T15:07:25.628+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2021-06-16T18:07:31.714+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-08T15:07:25.625+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <services
+                    cq:lastRolledout="{Date}2021-12-08T15:07:25.631+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2021-06-18T10:47:22.454+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T15:07:25.630+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/services"
+                    text="If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions."
+                    title="Web Development"/>
+                <services_1441860145
+                    cq:lastRolledout="{Date}2021-12-08T15:07:25.634+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2021-06-18T10:48:54.732+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T15:07:25.632+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/services"
+                    text="Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts."
+                    title="Apps Interface"/>
+            </responsivegrid_1355852908>
+            <responsivegrid_1004195634
+                cq:lastRolledout="{Date}2021-12-08T15:07:25.637+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2021-06-16T18:08:40.875+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-08T15:07:25.635+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <services
+                    cq:lastRolledout="{Date}2021-12-08T15:07:25.640+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2021-06-18T10:47:51.020+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T15:07:25.639+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/services"
+                    text="Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.&#xd;&#xa;&#xd;&#xa;"
+                    title="Photography"/>
+                <services_85628369
+                    cq:lastRolledout="{Date}2021-12-08T15:07:25.644+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2021-06-18T10:49:13.056+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T15:07:25.641+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/services"
+                    text="You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that."
+                    title="Graphic Design"/>
+            </responsivegrid_1004195634>
+            <responsivegrid_255711699
+                cq:lastRolledout="{Date}2021-12-08T15:07:25.648+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2021-06-16T18:35:44.678+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-08T15:07:25.645+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <facts
+                    cq:lastRolledout="{Date}2021-12-08T15:07:25.651+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2021-06-18T10:49:58.068+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T15:07:25.649+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/facts">
+                    <factmulti
+                        cq:lastRolledout="{Date}2021-12-08T15:07:25.652+05:30"
+                        cq:lastRolledoutBy="admin"
+                        jcr:mixinTypes="[cq:LiveRelationship]"
+                        jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:lastRolledout="{Date}2021-12-08T15:07:25.656+05:30"
+                            cq:lastRolledoutBy="admin"
+                            jcr:mixinTypes="[cq:LiveRelationship]"
+                            jcr:primaryType="nt:unstructured"
+                            text="Projects Completed"
+                            value="2536 "/>
+                        <item1
+                            cq:lastRolledout="{Date}2021-12-08T15:07:25.657+05:30"
+                            cq:lastRolledoutBy="admin"
+                            jcr:mixinTypes="[cq:LiveRelationship]"
+                            jcr:primaryType="nt:unstructured"
+                            text="Happy Clients"
+                            value="  6784"/>
+                        <item2
+                            cq:lastRolledout="{Date}2021-12-08T15:07:25.660+05:30"
+                            cq:lastRolledoutBy="admin"
+                            jcr:mixinTypes="[cq:LiveRelationship]"
+                            jcr:primaryType="nt:unstructured"
+                            text="Cups of Coffee"
+                            value="2239"/>
+                        <item3
+                            cq:lastRolledout="{Date}2021-12-08T15:07:25.663+05:30"
+                            cq:lastRolledoutBy="admin"
+                            jcr:mixinTypes="[cq:LiveRelationship]"
+                            jcr:primaryType="nt:unstructured"
+                            text="Real Professionals"
+                            value="435"/>
+                    </factmulti>
+                </facts>
+            </responsivegrid_255711699>
+            <responsivegrid_1639193885
+                cq:lastRolledout="{Date}2021-12-08T15:07:25.667+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2021-06-16T18:57:30.385+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-08T15:07:25.664+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <responsivegrid_1780928971
+                cq:lastRolledout="{Date}2021-12-08T15:07:25.670+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2021-06-16T18:58:21.010+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-08T15:07:25.668+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <responsivegrid_611048329
+                cq:lastRolledout="{Date}2021-12-08T15:07:25.674+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2021-06-16T18:59:43.328+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-08T15:07:25.671+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <responsivegrid_1131025255
+                cq:lastRolledout="{Date}2021-12-08T15:07:25.677+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2021-06-16T19:00:19.972+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-08T15:07:25.675+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <price
+                    cq:lastRolledout="{Date}2021-12-08T15:07:25.681+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2021-06-18T10:55:40.429+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T15:07:25.679+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/price"
+                    num="01"
+                    text1="Secure Online Transfer"
+                    text2="Unlimited Styles for interface"
+                    text3="Reliable Customer Service"
+                    title="For the individuals"
+                    type="Economy"/>
+            </responsivegrid_1131025255>
+            <responsivegrid_37138860
+                cq:lastRolledout="{Date}2021-12-08T15:07:25.684+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2021-06-16T19:02:25.089+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-08T15:07:25.682+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <price
+                    cq:lastRolledout="{Date}2021-12-08T15:07:25.687+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2021-06-18T10:56:15.394+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T15:07:25.685+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/price"
+                    num="02"
+                    text1="Secure Online Transfer"
+                    text2="Unlimited Styles for interface"
+                    text3="Reliable Customer Service"
+                    title="For the individuals"
+                    type="Business"/>
+            </responsivegrid_37138860>
+            <responsivegrid_1727918361
+                cq:lastRolledout="{Date}2021-12-08T15:07:25.689+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2021-06-16T19:16:21.329+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-08T15:07:25.688+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <price
+                    cq:lastRolledout="{Date}2021-12-08T15:07:25.695+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2021-06-18T10:56:34.367+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T15:07:25.691+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/price"
+                    num="03"
+                    text1="Secure Online Transfer"
+                    text2="Unlimited Styles for interface"
+                    text3="Reliable Customer Service"
+                    title="For the individuals"
+                    type="For the individuals"/>
+            </responsivegrid_1727918361>
+            <responsivegrid_535877729
+                cq:lastRolledout="{Date}2021-12-08T15:07:25.699+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2021-06-16T19:16:59.984+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-08T15:07:25.696+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <price
+                    cq:lastRolledout="{Date}2021-12-08T15:07:25.705+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2021-06-18T10:56:54.335+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T15:07:25.702+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/price"
+                    num="04"
+                    text1="Secure Online Transfer"
+                    text2="Unlimited Styles for interface"
+                    text3="Reliable Customer Service"
+                    title="For the individuals"
+                    type="Exclusive"/>
+            </responsivegrid_535877729>
+            <responsivegrid_751078450
+                cq:lastRolledout="{Date}2021-12-08T15:07:25.707+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2021-06-16T19:41:53.530+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-08T15:07:25.705+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <responsivegrid_953823701
+                cq:lastRolledout="{Date}2021-12-08T15:07:25.709+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2021-06-16T18:56:34.041+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-08T15:07:25.707+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <responsivegrid_868929164
+                cq:lastRolledout="{Date}2021-12-08T15:07:25.712+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2021-06-16T19:26:26.725+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-08T15:07:25.710+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <responsivegrid_2000967503
+                cq:lastRolledout="{Date}2021-12-08T15:07:25.714+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2021-06-18T00:56:14.208+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-08T15:07:25.713+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <responsivegrid_855154485
+                cq:lastRolledout="{Date}2021-12-08T15:07:25.716+05:30"
+                cq:lastRolledoutBy="admin"
+                jcr:created="{Date}2021-06-18T00:57:06.891+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-08T15:07:25.715+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:mixinTypes="[cq:LiveRelationship]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <titletext
+                    cq:lastRolledout="{Date}2021-12-08T15:07:25.719+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2021-06-18T10:57:34.259+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T15:07:25.718+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/titletext"/>
+                <titletext_1175133709
+                    cq:lastRolledout="{Date}2021-12-08T15:07:25.723+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2021-06-18T10:57:43.952+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T15:07:25.721+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/titletext"
+                    bottomPadding="true"
+                    sectionGap="false"
+                    text="It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person."
+                    title="Client’s Feedback About Me"/>
+                <testimonial
+                    cq:lastRolledout="{Date}2021-12-08T15:07:25.725+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2021-06-18T10:58:20.681+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T15:07:25.724+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/testimonial"
+                    desc="Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;"
+                    desg="CEO at Google"
+                    name="Harriet Maxwell"/>
+                <testimonial_1515578599
+                    cq:lastRolledout="{Date}2021-12-08T15:07:25.728+05:30"
+                    cq:lastRolledoutBy="admin"
+                    jcr:created="{Date}2021-06-18T10:58:43.570+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-08T15:07:25.726+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:mixinTypes="[cq:LiveRelationship]"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/testimonial"
+                    desc="A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;"
+                    desg="CEO at Facebook"
+                    name="Carolyn Craig"/>
+            </responsivegrid_855154485>
+        </root>
+        <cq:LiveSyncConfig
+            cq:isDeep="{Boolean}true"
+            cq:master="/content/ugamdemo/us/en/service-page"
+            cq:rolloutConfigs="[/libs/msm/wcm/rolloutconfigs/default]"
+            jcr:primaryType="cq:LiveCopy"/>
+    </jcr:content>
+</jcr:root>
