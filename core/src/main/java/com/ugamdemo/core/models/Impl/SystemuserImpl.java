@@ -6,8 +6,10 @@ import com.day.cq.search.QueryBuilder;
 import com.day.cq.search.result.Hit;
 import com.day.cq.search.result.SearchResult;
 import com.ugamdemo.core.models.Systemuser;
+import com.ugamdemo.core.utils.ResolverUtils;
 import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.api.resource.ResourceResolver;
+import org.apache.sling.api.resource.ResourceResolverFactory;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.slf4j.LoggerFactory;
@@ -30,6 +32,10 @@ public class SystemuserImpl implements Systemuser {
 
 
     private static final Logger LOG = LoggerFactory.getLogger(Systemuser.class);
+
+    @Inject
+    private ResourceResolverFactory resourceResolverFactory;
+
     @Inject
     ResourceResolver resolver;
     @Inject
@@ -46,8 +52,9 @@ public class SystemuserImpl implements Systemuser {
         map.put("p.properties", "rep:principalName");
         map.put("type", "rep:User");
         try {
+            ResourceResolver serviceResourceResolver = ResolverUtils.newResolver(resourceResolverFactory);
 
-            Session session = resolver.adaptTo(Session.class);
+            Session session = serviceResourceResolver.adaptTo(Session.class);
             Query listQuery = queryBuilder.createQuery(PredicateGroup.create(map), session);
             SearchResult result = listQuery.getResult();
             List<Hit> Hits = result.getHits();
