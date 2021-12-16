@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-12-10T16:47:04.853+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[]"
+        cq:template="/conf/ugamdemo/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="DemoExperience Fragment"
+        sling:resourceType="ugamdemo/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="ugamdemo/components/container"
+            layout="responsiveGrid">
+            <titletext
+                cq:masterBuildingBlock="{Boolean}true"
+                jcr:created="{Date}2021-12-10T16:46:32.582+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-12-10T16:48:58.179+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="building block 1"
+                sling:resourceType="cq/experience-fragments/editor/components/buildingblock">
+                <titletext24025018152100
+                    jcr:lastModified="{Date}2021-12-10T16:46:48.995+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/titletext"
+                    sectionGap="true"
+                    title="hello there"/>
+                <item24025018982800
+                    jcr:created="{Date}2021-12-10T16:46:56.322+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-10T16:47:04.805+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/banner-navigation"
+                    nav1="Home "
+                    nav2="About Me"
+                    title="My Offered Services"/>
+            </titletext>
+        </root>
+    </jcr:content>
+</jcr:root>
