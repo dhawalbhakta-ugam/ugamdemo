@@ -26,4 +26,5 @@
         afterdelete="function (properties) { $(document).trigger('cq-contentfragment-delete'); }"
         afteredit="function (properties) { $(document).trigger('cq-contentfragment-edit'); }"
         afterinsert="function (properties) { $(document).trigger('cq-contentfragment-insert'); }"/>
+
 </jcr:root>
