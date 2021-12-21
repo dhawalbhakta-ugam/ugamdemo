@@ -29,9 +29,9 @@ public class DateUpdateImpl implements DateUpdate{
             //ResourceResolver resourceResolver = new ResourceResolver();
             ResourceResolver serviceResourceResolver = ResolveUtils.newResolver(resourceResolverFactory);
             Session session = serviceResourceResolver.adaptTo(Session.class);
-            Resource resource = serviceResourceResolver.getResource("/content/ugamdemo/us/en/demoabc/jcr:content");
+            Resource resource = serviceResourceResolver.getResource("/content/ugamdemo/us/en/demoabc/jcr:content/root/container/container/schedulerdate");
             Node node = resource.adaptTo(Node.class);
-             node.setProperty("time2" , "hello there ");
+             node.setProperty("time2" , "hello there aem");
              node.setProperty("time", DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance())));
             session.save();
             session.logout();
