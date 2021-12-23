@@ -5,6 +5,7 @@ import com.day.cq.replication.ReplicationAction;
 import com.day.cq.replication.ReplicationActionType;
 import com.day.cq.replication.ReplicationException;
 import com.day.cq.replication.ReplicationOptions;
+import com.ugamdemo.core.models.DateUpdate;
 import com.ugamdemo.core.models.Impl.ResolveUtils;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
@@ -25,6 +26,10 @@ public class SampleReplicationPreprocessor implements Preprocessor {
     private static final Logger log = LoggerFactory.getLogger(SampleReplicationPreprocessor.class);
     @Reference
     ResourceResolverFactory resourceResolverFactory;
+
+    String path1 ="/content/ugamdemo/us/en/demoabc/jcr:content/root/container/container/schedulerdate";
+    @Reference
+    DateUpdate dateUpdate;
     @Override
     public void preprocess(final ReplicationAction replicationAction,
                            final ReplicationOptions replicationOptions) throws ReplicationException {
@@ -45,7 +50,8 @@ public class SampleReplicationPreprocessor implements Preprocessor {
                 Property property = node.getProperty("time");
                 if (property.getValue() != DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance())) ) {
                     log.info("value of date before update" + property.getValue());
-                    node.setProperty("time", DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance())));
+                    dateUpdate.updateDate(path1);
+                    //node.setProperty("time", DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance())));
                     log.info("updated node time" + DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance())));
                 }
                 session.save();
