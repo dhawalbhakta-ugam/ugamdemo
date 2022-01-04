@@ -45,23 +45,17 @@ public class BannerAreaImpl implements BannerArea{
         return heading;
     }
 
-    @Override
-    public String getBannerAreaDescription() {
-        return desc;
-    }
+  @Override
+    public String getBannerAreaDescription() { return desc; }
 
     @Override
-    public String getBannerAreaButtonTitle() {
-        return buttonTitle;
-    }
+    public String getBannerAreaButtonTitle() { return buttonTitle; }
 
     @Override
-    public String getImg() {
-        return img;
-    }
+    public String getImg() { return img; }
 
     @Override
-    public String getPathValue() {
-        return path;
-    }
+    public String getPathValue() { return path; }
+
+
 }

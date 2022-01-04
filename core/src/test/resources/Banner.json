@@ -1,16 +1,14 @@
+{ "Author":
 {
-  "Author": {
-    "jcr:primaryType": "nt:unstructured",
-    "jcr:createdBy": "admin",
-    "buttonTitle": "DISCOVER NOW",
-    "jcr:lastModifiedBy": "admin",
-    "jcr:created": "Fri Jun 18 2021 01:06:38 GMT+0530",
-    "img": "/content/dam/ugamdemo/hero-img.png",
-    "desc": "You will begin to realise why this exercise is called the Dickens Pattern with reference to the ghost showing Scrooge some different futures.",
-    "path": "/content/ugamdemo/us/en/portfolio-page",
-    "title": "THIS IS ME",
-    "heading": "PHILIP GILBERT ",
-    "jcr:lastModified": "Fri Jun 18 2021 17:47:01 GMT+0530",
-    "sling:resourceType": "ugamdemo/components/content/banner-area"
-  }
+  "jcr:primaryType":"nt:unstructured",
+  "jcr:createdBy":"admin",
+  "buttonTitle":"next",
+  "jcr:lastModifiedBy":"admin",
+  "jcr:created":"Fri Dec 31 2021 11:25:01 GMT+0530",
+  "desc":"testing purpose",
+  "title":"THIS IS ME",
+  "heading":"hello banner testing",
+  "jcr:lastModified":"Fri Dec 31 2021 11:25:42 GMT+0530",
+  "sling:resourceType":"ugamdemo/components/content/banner-area"
+}
 }

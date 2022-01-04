@@ -9,6 +9,8 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 @ExtendWith({AemContextExtension.class, MockitoExtension.class})
 class BannerAreaImplTest {
 
@@ -25,18 +27,29 @@ class BannerAreaImplTest {
         Resource json = aemContext.currentResource("/content/Author");
         BannerAreaImpl bannerarea = json.adaptTo(BannerAreaImpl.class);
         assertEquals("THIS IS ME", bannerarea.getBannerAreaTitle());
-    }
 
-   /* @Test
-    void getBannerAreaHeading() {
     }
 
     @Test
+    void getBannerAreaHeading() {
+        Resource json = aemContext.currentResource("/content/Author");
+        BannerAreaImpl bannerArea = json.adaptTo(BannerAreaImpl.class);
+        assertEquals("hello banner testing", bannerArea.getBannerAreaHeading());
+    }
+
+   @Test
     void getBannerAreaDescription() {
+        Resource json = aemContext.currentResource("/content/Author");
+        BannerAreaImpl bannerArea = json.adaptTo(BannerAreaImpl.class);
+       assertEquals("testing purpose", bannerArea.getBannerAreaDescription());
+
     }
 
     @Test
     void getBannerAreaButtonTitle() {
+        Resource json = aemContext.currentResource("/content/Author");
+        BannerAreaImpl bannerArea = json.adaptTo(BannerAreaImpl.class);
+        assertEquals("next", bannerArea.getBannerAreaButtonTitle());
     }
 
     @Test
@@ -45,5 +58,5 @@ class BannerAreaImplTest {
 
     @Test
     void getPathValue() {
-    } */
+    }
 }
