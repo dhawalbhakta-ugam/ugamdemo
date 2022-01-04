@@ -8,6 +8,7 @@
         cq:template="/conf/ugamdemo/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
         jcr:title="us"
+
         sling:resourceType="foundation/components/redirect">
         <cq:BlueprintSyncConfig
             cq:rolloutConfigs="[/apps/msm/dhawalsblueprints/rolloutconfigs/personalConfig]"

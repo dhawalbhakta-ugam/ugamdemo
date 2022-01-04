@@ -4,8 +4,6 @@
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
         cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
-        cq:lastModified="{Date}2021-12-09T10:50:01.153+05:30"
-        cq:lastModifiedBy="admin"
         cq:template="/conf/ugamdemo/settings/wcm/templates/page-content"
         jcr:primaryType="cq:PageContent"
         jcr:title="en"

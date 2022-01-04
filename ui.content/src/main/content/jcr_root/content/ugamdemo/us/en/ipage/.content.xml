@@ -3,9 +3,14 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:contextHubPath="/etc/cloudsettings/default/contexthub"
-        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+
         cq:lastModified="{Date}2021-12-09T10:54:51.692+05:30"
         cq:lastModifiedBy="admin"
+
+        cq:lastModified="{Date}2021-12-23T15:24:26.334+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[dhawalstag:engpagetag/subtageng]"
+
         cq:template="/conf/ugamdemo/settings/wcm/templates/custom_responsivetemp"
         jcr:primaryType="cq:PageContent"
         jcr:title="Home"

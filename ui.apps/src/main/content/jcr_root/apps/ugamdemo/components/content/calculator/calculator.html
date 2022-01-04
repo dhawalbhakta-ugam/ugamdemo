@@ -1,0 +1,37 @@
+<script>
+function sum(){
+var firstNumber = $('#firstNumber').val();
+var secondNumber = $('#secondNumber').val();
+$.ajax({
+url : '/bin/calc',
+method : 'GET',
+data : {firstNumber : firstNumber,
+secondNumber : secondNumber
+},
+success:function(resultText){
+$('#answer').text(resultText);
+},
+error : function(jqXHR, exception){
+console.log('errorException');
+}
+
+
+
+});
+}
+</script>
+
+
+
+
+<label>first number</label><br>
+<input type="number" id="firstNumber"><br>
+<label>second number</label><br>
+<input type="number" id="secondNumber"><br><br>
+
+<button type="submit" onclick="sum()">Click here for answer </button>
+
+
+
+
+<div id="answer"></div>

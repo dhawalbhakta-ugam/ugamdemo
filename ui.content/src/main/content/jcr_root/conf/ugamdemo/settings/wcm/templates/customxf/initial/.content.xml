@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-06-21T19:57:30.452+05:30"
+        cq:lastModifiedBy="admin"
+        cq:tags="[experience-fragments:variation/web]"
+        cq:template="/conf/ugamdemo/settings/wcm/templates/customxf"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="ugamdemo/components/xfpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="ugamdemo/components/container"
+            layout="responsiveGrid">
+            <responsivegrid
+                jcr:created="{Date}2021-06-21T19:55:22.984+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-21T19:55:22.984+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+            </responsivegrid>
+            <responsivegrid_1994941345
+                jcr:created="{Date}2021-06-21T19:55:40.630+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-21T19:55:40.630+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="4"/>
+                </cq:responsive>
+            </responsivegrid_1994941345>
+            <responsivegrid_895357901
+                jcr:created="{Date}2021-06-21T19:56:16.316+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-21T19:56:16.316+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="4"/>
+                </cq:responsive>
+            </responsivegrid_895357901>
+            <responsivegrid_165873893
+                jcr:created="{Date}2021-06-21T19:56:22.426+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-21T19:56:22.426+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="4"/>
+                </cq:responsive>
+            </responsivegrid_165873893>
+            <responsivegrid_4343669
+                jcr:created="{Date}2021-06-21T19:56:46.669+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-21T19:56:46.669+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="3"/>
+                </cq:responsive>
+            </responsivegrid_4343669>
+            <responsivegrid_423983616
+                jcr:created="{Date}2021-06-21T19:56:52.357+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-21T19:56:52.357+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="3"/>
+                </cq:responsive>
+            </responsivegrid_423983616>
+            <responsivegrid_460833466
+                jcr:created="{Date}2021-06-21T19:56:56.998+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-21T19:56:56.998+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="3"/>
+                </cq:responsive>
+            </responsivegrid_460833466>
+            <responsivegrid_1777757047
+                jcr:created="{Date}2021-06-21T19:57:04.558+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-21T19:57:04.558+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="3"/>
+                </cq:responsive>
+            </responsivegrid_1777757047>
+        </root>
+    </jcr:content>
+</jcr:root>
