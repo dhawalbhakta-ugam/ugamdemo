@@ -2,11 +2,14 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-12-06T15:31:47.939+05:30"
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2021-12-23T15:24:41.813+05:30"
         cq:lastModifiedBy="admin"
+        cq:tags="[dhawalstag:engpagetag/subtageng]"
         cq:template="/conf/ugamdemo/settings/wcm/templates/custom_responsivetemp"
         jcr:primaryType="cq:PageContent"
-        jcr:title="styling"
+        jcr:title="Portfolio"
         sling:resourceType="ugamdemo/components/page">
         <root
             jcr:lastModified="{Date}2021-06-16T18:02:46.715+05:30"
@@ -19,50 +22,27 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="ugamdemo/components/container">
-                <titletext
-                    jcr:created="{Date}2021-12-02T11:03:57.435+05:30"
+                <banner_navigation
+                    jcr:created="{Date}2021-06-18T11:04:08.582+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2021-12-02T11:04:53.586+05:30"
+                    jcr:lastModified="{Date}2021-06-18T12:52:32.929+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/banner-navigation"
+                    nav1="Home "
+                    nav2="Portfolio"
+                    path="/content/ugamdemo/us/en/ipage"
+                    title="Portfolio"/>
+                <titletext
+                    jcr:created="{Date}2021-06-18T11:04:40.786+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T11:07:29.216+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="ugamdemo/components/content/titletext"
-                    bottomPadding="true"
                     sectionGap="true"
-                    title="hello all this is styling"/>
-                <banner_area_1029482341
-                    cq:styleIds="[1638444854369]"
-                    jcr:created="{Date}2021-12-02T11:36:14.831+05:30"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2021-12-02T11:41:48.482+05:30"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ugamdemo/components/content/banner-area"
-                    buttonTitle="discover now"
-                    desc="you will begin to realise that&#xd;&#xa;"
-                    heading="Philip Gilbert"
-                    img="/content/dam/ugamdemo/hero-img.png"
-                    title="This is me"/>
-                <home_about
-                    jcr:created="{Date}2021-12-02T11:45:14.962+05:30"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2021-12-02T11:46:18.580+05:30"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ugamdemo/components/content/home-about"
-                    buttonTitle="VIEW FULL DETAILS"
-                    desc="hello all this is home about"
-                    heading="Philip Gilbert"
-                    img="/content/dam/ugamdemo/about-img.png"
-                    title="ABOUT ME"/>
-                <newtitle
-                    cq:styleIds="[1638440409822]"
-                    jcr:created="{Date}2021-12-02T15:51:02.967+05:30"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2021-12-02T16:26:55.385+05:30"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    jcr:title="task 3 "
-                    sling:resourceType="ugamdemo/components/content/newtitle"/>
+                    text="Who are in extremely love with eco friendly system."
+                    title="Our Latest Featured Projects"/>
             </container>
             <responsivegrid
                 jcr:created="{Date}2021-06-16T18:04:05.672+05:30"
@@ -70,21 +50,57 @@
                 jcr:lastModified="{Date}2021-06-16T18:06:09.810+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <portfolio_teaser
+                    jcr:created="{Date}2021-06-18T11:05:22.686+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T11:05:54.243+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/portfolio-teaser"
+                    img="/content/dam/ugamdemo/p1.jpg"
+                    portfolioText="vector"
+                    portfolioTitle="2D Vinyl Design "
+                    preimg="/content/dam/ugamdemo/preview.png"/>
+            </responsivegrid>
             <responsivegrid_1355852908
                 jcr:created="{Date}2021-06-16T18:07:31.714+05:30"
                 jcr:createdBy="admin"
                 jcr:lastModified="{Date}2021-06-16T18:08:11.211+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <portfolio_teaser
+                    jcr:created="{Date}2021-06-18T11:05:57.622+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T11:06:28.420+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/portfolio-teaser"
+                    img="/content/dam/ugamdemo/p2.jpg"
+                    portfolioText="vector"
+                    portfolioTitle="2D Vinyl Design"
+                    preimg="/content/dam/ugamdemo/preview.png"/>
+            </responsivegrid_1355852908>
             <responsivegrid_1004195634
                 jcr:created="{Date}2021-06-16T18:08:40.875+05:30"
                 jcr:createdBy="admin"
                 jcr:lastModified="{Date}2021-06-16T18:08:57.942+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <portfolio_teaser
+                    jcr:created="{Date}2021-06-18T11:06:32.256+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T11:07:07.731+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/portfolio-teaser"
+                    img="/content/dam/ugamdemo/p3.jpg"
+                    portfolioText="Agency"
+                    portfolioTitle="Creative Poster Design "
+                    preimg="/content/dam/ugamdemo/preview.png"/>
+            </responsivegrid_1004195634>
             <responsivegrid_255711699
                 jcr:created="{Date}2021-06-16T18:35:44.678+05:30"
                 jcr:createdBy="admin"
@@ -92,14 +108,20 @@
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
-                <newtitle
-                    jcr:created="{Date}2021-12-02T15:53:07.657+05:30"
+                <contentfragment
+                    jcr:created="{Date}2021-12-14T20:27:55.743+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2021-12-02T15:53:18.709+05:30"
+                    jcr:lastModified="{Date}2021-12-14T20:27:55.743+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    jcr:title="qwerty"
-                    sling:resourceType="ugamdemo/components/content/newtitle"/>
+                    sling:resourceType="ugamdemo/components/content/contentfragment"/>
+                <contentfragment_552987892
+                    jcr:created="{Date}2021-12-14T20:28:06.267+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-12-14T20:28:06.267+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/contentfragment"/>
             </responsivegrid_255711699>
             <responsivegrid_1639193885
                 jcr:created="{Date}2021-06-16T18:57:30.385+05:30"
@@ -121,29 +143,7 @@
                 jcr:lastModified="{Date}2021-06-16T19:00:08.010+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid">
-                <osgiconfigdemo
-                    jcr:created="{Date}2021-12-03T13:21:50.145+05:30"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2021-12-03T13:21:50.145+05:30"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ugamdemo/components/content/osgiconfigdemo"/>
-                <osgiconfigdemo_2064648937
-                    jcr:created="{Date}2021-12-03T13:47:38.859+05:30"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2021-12-03T13:47:38.859+05:30"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ugamdemo/components/content/osgiconfigdemo"/>
-                <osgiconfigdemo_40086617
-                    jcr:created="{Date}2021-12-06T15:31:47.885+05:30"
-                    jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2021-12-06T15:31:47.885+05:30"
-                    jcr:lastModifiedBy="admin"
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="ugamdemo/components/content/osgiconfigdemo"/>
-            </responsivegrid_611048329>
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
             <responsivegrid_1131025255
                 jcr:created="{Date}2021-06-16T19:00:19.972+05:30"
                 jcr:createdBy="admin"
@@ -206,7 +206,16 @@
                 jcr:lastModified="{Date}2021-06-18T00:57:14.504+05:30"
                 jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <brand
+                    jcr:created="{Date}2021-06-18T11:17:10.156+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T11:17:40.492+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/brand"
+                    imgPath="/content/dam/ugamdemo/l1.png"/>
+            </responsivegrid_855154485>
         </root>
     </jcr:content>
 </jcr:root>
