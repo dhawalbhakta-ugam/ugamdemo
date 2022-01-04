@@ -19,6 +19,7 @@ import javax.jcr.Property;
 import javax.jcr.Session;
 import java.util.Calendar;
 import java.util.Date;
+
 @Component(
         immediate = true
 )
@@ -27,9 +28,11 @@ public class SampleReplicationPreprocessor implements Preprocessor {
     @Reference
     ResourceResolverFactory resourceResolverFactory;
 
+
     String path1 ="/content/ugamdemo/us/en/demoabc/jcr:content/root/container/container/schedulerdate";
     @Reference
     DateUpdate dateUpdate;
+
     @Override
     public void preprocess(final ReplicationAction replicationAction,
                            final ReplicationOptions replicationOptions) throws ReplicationException {
@@ -53,6 +56,7 @@ public class SampleReplicationPreprocessor implements Preprocessor {
                     dateUpdate.updateDate(path1);
                     //node.setProperty("time", DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance())));
                     log.info("updated node time" + DateUtil.parseISO8601(DateUtil.getISO8601Date(Calendar.getInstance())));
+
                 }
                 session.save();
                 session.logout();
