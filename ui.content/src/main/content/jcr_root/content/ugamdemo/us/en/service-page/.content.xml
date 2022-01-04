@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2021-06-18T13:15:24.327+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/ugamdemo/settings/wcm/templates/custom_responsivetemp"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="service "
+        sling:resourceType="ugamdemo/components/page">
+        <root
+            jcr:lastModified="{Date}2021-06-16T18:02:46.715+05:30"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="ugamdemo/components/container"
+            layout="responsiveGrid">
+            <container
+                jcr:lastModified="{Date}2021-06-16T18:03:00.868+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="ugamdemo/components/container">
+                <banner_navigation
+                    jcr:created="{Date}2021-06-18T10:00:23.014+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T13:15:24.318+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/banner-navigation"
+                    nav1="Home"
+                    nav2="Services"
+                    path="/content/ugamdemo/us/en/ipage"
+                    title="Services"/>
+                <titletext
+                    jcr:created="{Date}2021-06-18T10:02:56.107+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T10:45:58.447+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/titletext"
+                    bottomPadding="true"
+                    sectionGap="true"
+                    text="At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected."
+                    title="My Offered Services"/>
+            </container>
+            <responsivegrid
+                jcr:created="{Date}2021-06-16T18:04:05.672+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-16T18:06:09.810+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <services
+                    jcr:created="{Date}2021-06-18T10:46:47.652+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T10:47:11.241+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/services"
+                    text="“It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”"
+                    title="Web Design"/>
+                <services_775984337
+                    jcr:created="{Date}2021-06-18T10:48:22.839+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T10:48:40.801+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/services"
+                    text="Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades. There is a lot of argument."
+                    title="Clipping Path"/>
+            </responsivegrid>
+            <responsivegrid_1355852908
+                jcr:created="{Date}2021-06-16T18:07:31.714+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-16T18:08:11.211+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <services
+                    jcr:created="{Date}2021-06-18T10:47:22.454+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T10:47:47.110+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/services"
+                    text="If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions."
+                    title="Web Development"/>
+                <services_1441860145
+                    jcr:created="{Date}2021-06-18T10:48:54.732+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T10:49:10.304+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/services"
+                    text="Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts."
+                    title="Apps Interface"/>
+            </responsivegrid_1355852908>
+            <responsivegrid_1004195634
+                jcr:created="{Date}2021-06-16T18:08:40.875+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-16T18:08:57.942+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <services
+                    jcr:created="{Date}2021-06-18T10:47:51.020+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T10:48:16.740+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/services"
+                    text="Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.&#xd;&#xa;&#xd;&#xa;"
+                    title="Photography"/>
+                <services_85628369
+                    jcr:created="{Date}2021-06-18T10:49:13.056+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T10:49:28.225+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/services"
+                    text="You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that."
+                    title="Graphic Design"/>
+            </responsivegrid_1004195634>
+            <responsivegrid_255711699
+                jcr:created="{Date}2021-06-16T18:35:44.678+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-16T18:36:11.497+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <facts
+                    jcr:created="{Date}2021-06-18T10:49:58.068+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T10:55:22.382+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/facts">
+                    <factmulti jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            text="Projects Completed"
+                            value="2536 "/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            text="Happy Clients"
+                            value="  6784"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            text="Cups of Coffee"
+                            value="2239"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            text="Real Professionals"
+                            value="435"/>
+                    </factmulti>
+                </facts>
+            </responsivegrid_255711699>
+            <responsivegrid_1639193885
+                jcr:created="{Date}2021-06-16T18:57:30.385+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-16T18:57:47.049+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <responsivegrid_1780928971
+                jcr:created="{Date}2021-06-16T18:58:21.010+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-16T18:58:40.143+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <responsivegrid_611048329
+                jcr:created="{Date}2021-06-16T18:59:43.328+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-16T19:00:08.010+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <responsivegrid_1131025255
+                jcr:created="{Date}2021-06-16T19:00:19.972+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-16T19:02:05.169+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <price
+                    jcr:created="{Date}2021-06-18T10:55:40.429+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T10:56:09.457+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/price"
+                    num="01"
+                    text1="Secure Online Transfer"
+                    text2="Unlimited Styles for interface"
+                    text3="Reliable Customer Service"
+                    title="For the individuals"
+                    type="Economy"/>
+            </responsivegrid_1131025255>
+            <responsivegrid_37138860
+                jcr:created="{Date}2021-06-16T19:02:25.089+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-16T19:15:58.950+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <price
+                    jcr:created="{Date}2021-06-18T10:56:15.394+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T10:56:29.983+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/price"
+                    num="02"
+                    text1="Secure Online Transfer"
+                    text2="Unlimited Styles for interface"
+                    text3="Reliable Customer Service"
+                    title="For the individuals"
+                    type="Business"/>
+            </responsivegrid_37138860>
+            <responsivegrid_1727918361
+                jcr:created="{Date}2021-06-16T19:16:21.329+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-16T19:16:38.004+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <price
+                    jcr:created="{Date}2021-06-18T10:56:34.367+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T10:56:48.321+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/price"
+                    num="03"
+                    text1="Secure Online Transfer"
+                    text2="Unlimited Styles for interface"
+                    text3="Reliable Customer Service"
+                    title="For the individuals"
+                    type="For the individuals"/>
+            </responsivegrid_1727918361>
+            <responsivegrid_535877729
+                jcr:created="{Date}2021-06-16T19:16:59.984+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-16T19:17:16.360+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <price
+                    jcr:created="{Date}2021-06-18T10:56:54.335+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T10:57:16.797+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/price"
+                    num="04"
+                    text1="Secure Online Transfer"
+                    text2="Unlimited Styles for interface"
+                    text3="Reliable Customer Service"
+                    title="For the individuals"
+                    type="Exclusive"/>
+            </responsivegrid_535877729>
+            <responsivegrid_751078450
+                jcr:created="{Date}2021-06-16T19:41:53.530+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-16T19:42:09.641+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <responsivegrid_953823701
+                jcr:created="{Date}2021-06-16T18:56:34.041+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-17T12:37:06.275+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <responsivegrid_868929164
+                jcr:created="{Date}2021-06-16T19:26:26.725+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-18T00:25:08.410+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <responsivegrid_2000967503
+                jcr:created="{Date}2021-06-18T00:56:14.208+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-18T00:56:40.368+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+            <responsivegrid_855154485
+                jcr:created="{Date}2021-06-18T00:57:06.891+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-18T00:57:14.504+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <titletext
+                    jcr:created="{Date}2021-06-18T10:57:34.259+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T10:57:34.259+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/titletext"/>
+                <titletext_1175133709
+                    jcr:created="{Date}2021-06-18T10:57:43.952+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T11:02:42.240+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/titletext"
+                    bottomPadding="true"
+                    sectionGap="false"
+                    text="It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person."
+                    title="Client’s Feedback About Me"/>
+                <testimonial
+                    jcr:created="{Date}2021-06-18T10:58:20.681+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T10:58:38.669+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/testimonial"
+                    desc="Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;"
+                    desg="CEO at Google"
+                    name="Harriet Maxwell"/>
+                <testimonial_1515578599
+                    jcr:created="{Date}2021-06-18T10:58:43.570+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-06-18T10:59:02.906+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="ugamdemo/components/content/testimonial"
+                    desc="A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.&#xd;&#xa;&#xd;&#xa;&#xd;&#xa;"
+                    desg="CEO at Facebook"
+                    name="Carolyn Craig"/>
+            </responsivegrid_855154485>
+        </root>
+    </jcr:content>
+</jcr:root>

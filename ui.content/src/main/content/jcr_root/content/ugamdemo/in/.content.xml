@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-12-09T10:36:34.026+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastRolledout="{Date}2021-12-08T15:07:24.856+05:30"
+        cq:lastRolledoutBy="admin"
+        cq:redirectTarget="/content/ugamdemo/in/en"
+        cq:siteOwner="admin"
+        cq:template="/conf/ugamdemo/settings/wcm/templates/page-content"
+        jcr:mixinTypes="[cq:LiveSync]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="india"
+        sling:resourceType="foundation/components/redirect">
+        <cq:LiveSyncConfig
+            cq:excludedPaths="[en/abcdemo]"
+            cq:isDeep="{Boolean}true"
+            cq:master="/content/ugamdemo/us"
+            jcr:primaryType="cq:LiveCopy"/>
+    </jcr:content>
+    <en/>
+</jcr:root>
