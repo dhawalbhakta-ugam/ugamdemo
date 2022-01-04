@@ -1,12 +1,12 @@
 package com.ugamdemo.core.models.Impl;
-        import org.apache.sling.api.resource.LoginException;
-        import org.apache.sling.api.resource.ResourceResolver;
-        import org.apache.sling.api.resource.ResourceResolverFactory;
-        import org.slf4j.Logger;
-        import org.slf4j.LoggerFactory;
-        import java.util.Collections;
-        import java.util.HashMap;
-        import java.util.Map;
+import org.apache.sling.api.resource.LoginException;
+import org.apache.sling.api.resource.ResourceResolver;
+import org.apache.sling.api.resource.ResourceResolverFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 public class ResolveUtils {
 
     private ResolveUtils() {

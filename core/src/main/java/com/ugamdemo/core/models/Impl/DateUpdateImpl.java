@@ -17,6 +17,7 @@ package com.ugamdemo.core.models.Impl;
 @Designate(ocd = SchedulerConfiguration.class)
 public class DateUpdateImpl implements DateUpdate{
 
+     String path ="/content/ugamdemo/us/en/demoabc/jcr:content/root/container/container/schedulerdate";
 
     private static final Logger LOG = (Logger) LoggerFactory.getLogger(DateUpdateImpl.class);
     @Reference
@@ -24,7 +25,7 @@ public class DateUpdateImpl implements DateUpdate{
     /*   @Inject
        ResourceResolve resourceResolve;*/
     @Override
-    public void updateDate() {
+    public String updateDate( String path) {
         try{
             //ResourceResolver resourceResolver = new ResourceResolver();
             ResourceResolver serviceResourceResolver = ResolveUtils.newResolver(resourceResolverFactory);
@@ -39,6 +40,7 @@ public class DateUpdateImpl implements DateUpdate{
         } catch (Exception e) {
             //LOG.info(e.getMessage());
         }
+           return path;
     }
 
 }

@@ -18,6 +18,7 @@ public class DemoScheduler implements Runnable {
     private static final Logger LOG = LoggerFactory.getLogger(DemoScheduler.class);
 
     private int schedulerId;
+    String path ="/content/ugamdemo/us/en/demoabc/jcr:content/root/container/container/schedulerdate";
 
     @Reference
     private Scheduler scheduler;
@@ -53,6 +54,6 @@ public class DemoScheduler implements Runnable {
     @Override
     public void run() {
         LOG.info("\n ====> DEMO RUN METHOD ");
-        dateUpdate.updateDate();
+        dateUpdate.updateDate(path);
     }
 }
