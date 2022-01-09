@@ -706,8 +706,6 @@ Bundle-DocURL:
                 <type>zip</type>
                 <version>${core.wcm.components.version}</version>
             </dependency>
-
-
             <!-- Testing -->
             <dependency>
                 <groupId>org.junit</groupId>
