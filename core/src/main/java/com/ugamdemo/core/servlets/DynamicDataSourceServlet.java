@@ -34,7 +34,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.TreeMap;
 
-import static com.ugamdemo.core.constants.AppConstants.EQUALS;
+import static com.ugamdemo.core.constants.AppConstants.EQUALSS;
 import static org.apache.sling.api.servlets.ServletResolverConstants.SLING_SERVLET_RESOURCE_TYPES;
 import static com.ugamdemo.core.constants.AppConstants.COLOR_LIST;
 import static com.ugamdemo.core.constants.AppConstants.COLOR_LIST_PATH;
@@ -50,8 +50,8 @@ import static com.ugamdemo.core.servlets.DynamicDataSourceServlet.SERVICE_NAME;
 @Component(
         service = Servlet.class,
         property = {
-                Constants.SERVICE_ID + EQUALS + SERVICE_NAME,
-                SLING_SERVLET_RESOURCE_TYPES + EQUALS + RESOURCE_TYPE
+                Constants.SERVICE_ID + EQUALSS + SERVICE_NAME,
+                SLING_SERVLET_RESOURCE_TYPES + EQUALSS + RESOURCE_TYPE
         }
 )
 public class DynamicDataSourceServlet extends SlingSafeMethodsServlet {

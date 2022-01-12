@@ -38,9 +38,9 @@ public class DropDownServletdemo extends SlingSafeMethodsServlet {
             value = fieldVal[0];
         }
 
-        ValueMap vm = new ValueMapDecorator(new java.util.HashMap<String, Object>());
+        ValueMap vm = new ValueMapDecorator(new java.util.HashMap<>());
         vm.put("value", value);
-        List<Resource> resourceList = new ArrayList<Resource>();
+        List<Resource> resourceList = new ArrayList<>();
         resourceList.add(new ValueMapResource(resourceResolver, new ResourceMetadata(), "nt:unstructured", vm));
         request.setAttribute(DataSource.class.getName(), new SimpleDataSource(resourceList.iterator()));
     }

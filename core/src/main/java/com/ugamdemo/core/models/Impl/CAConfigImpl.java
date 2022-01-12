@@ -14,8 +14,6 @@ import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.apache.sling.models.annotations.injectorspecific.ScriptVariable;
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import javax.annotation.PostConstruct;
 
@@ -25,8 +23,7 @@ import javax.annotation.PostConstruct;
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 
 public class CAConfigImpl implements CAConfig {
-  private static final Logger LOG = LoggerFactory.getLogger(CAConfigImpl.class);
-  protected static final String RESOURCE_TYPE = "ugamdemo/components/content/card";
+  protected static final String RESOURCE_TYPE = "ugamdemo/components/content/cards";
 
   @SlingObject
   ResourceResolver resourceResolver;
@@ -39,9 +36,7 @@ public class CAConfigImpl implements CAConfig {
 
   private String siteCountry;
   private String siteLocale;
- // private String siteAdmin;
- //private String siteSection;
-  private DemoCAConfig personalCAConfig;
+  private DemoCAConfig CAConfig;
 
   @Override
   public String getSiteCountry() {
@@ -53,23 +48,13 @@ public class CAConfigImpl implements CAConfig {
     return siteLocale;
   }
 
- /* @Override
-  public String getSiteAdmin() {
-    return siteAdmin;
-  }*/
-
- /* @Override
-  public String getSiteSection() {
-    return siteSection;
-  } */
 
   @PostConstruct
   public void postConstruct() {
     DemoCAConfig caConfig = getContextAwareConfig(currentPage.getPath(), resourceResolver);
     siteCountry = caConfig.siteCountry();
     siteLocale = caConfig.siteLocale();
-    //siteAdmin = caConfig.siteAdmin();
-   // siteSection = caConfig.siteSection();
+
 
   }
 
