@@ -10,6 +10,7 @@ import java.io.IOException;
         public String getLname();
         public String getEmail();
         public String getAvatar();
+        //public String getAvatar();
 
     }
 

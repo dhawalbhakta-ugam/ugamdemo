@@ -1,7 +1,5 @@
 package com.ugamdemo.core.models.Impl;
 
-
-
 import com.ugamdemo.core.models.FetchSingleUser;
 import com.ugamdemo.core.utils.JSONLoaders;
 import org.apache.sling.api.resource.Resource;
@@ -27,6 +25,7 @@ public class FetchSingleUserImpl implements FetchSingleUser {
     String lname;
     String email;
     String avatar;
+    //String avatar;
     @Override
     public String getUrl(){
         return "https://reqres.in/api/users/"+url;
