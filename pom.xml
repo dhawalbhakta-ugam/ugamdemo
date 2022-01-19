@@ -30,7 +30,7 @@
         <module>ui.apps</module>
         <module>ui.apps.structure</module>
         <module>ui.config</module>
-        <!-- <module>ui.content</module> -->
+        <module>ui.content</module>
         <module>it.tests</module>
         <module>ui.tests</module>
     </modules>
@@ -744,21 +744,6 @@ Bundle-DocURL:
                 <version>1.0.1</version>
                 <scope>test</scope>
             </dependency>
-
-
-            <dependency>
-
-                <groupId>org.apache.httpcomponents</groupId>
-
-                <artifactId>httpclient</artifactId>
-
-                <version>4.1.1</version>
-
-            </dependency>
-
-
-
-
         </dependencies>
     </dependencyManagement>
 
