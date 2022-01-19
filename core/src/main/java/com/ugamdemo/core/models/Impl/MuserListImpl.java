@@ -44,6 +44,8 @@ public class MuserListImpl implements MuserList {
             user.put("lname",jsonArray1.getJSONObject(i).getString("last_name"));
             user.put("email",jsonArray1.getJSONObject(i).getString("email"));
             user.put("avatar",jsonArray1.getJSONObject(i).getString("avatar"));
+            //user.put("avatar",jsonArray1.getJSONObject(i).getString("avatar"));
+
             javawithmultipleuser.add(user);
         }
         log.info("===list==="+javawithmultipleuser);

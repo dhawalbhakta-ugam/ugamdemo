@@ -1,0 +1,12 @@
+<sly class="container bg-white" data-sly-use.mu="com.ugamdemo.core.models.MuserList"></sly>
+  <h3 hidden>${mu.url}</h3>
+  <div data-sly-list.items=${mu.data}>
+    <div class="column cardlist-container">
+      <img src="${items.avatar}"/>
+        <div>
+            <span>${items.fname}</span>
+            <span>${items.lname}</span>
+        </div>
+		<p style="text-align: center;" id="demo3">${items.email}</p>
+    </div>
+</div>
