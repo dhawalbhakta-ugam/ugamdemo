@@ -1,10 +1,12 @@
 package com.ugamdemo.core.models.Impl;
 
 import com.ugamdemo.core.models.FetchSingleUser;
+import com.ugamdemo.core.models.OsgiofSingleUse;
 import com.ugamdemo.core.utils.JSONLoaders;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -13,10 +15,14 @@ import org.slf4j.LoggerFactory;
 import javax.inject.Inject;
 import java.io.IOException;
 import java.util.Iterator;
+
 @Model(adaptables = Resource.class,
         adapters = FetchSingleUser.class,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class FetchSingleUserImpl implements FetchSingleUser {
+
+    @OSGiService
+    OsgiofSingleUse osgiofSingleUse;
 
     final Logger log = LoggerFactory.getLogger(FetchSingleUserImpl.class);
     @Inject
@@ -25,10 +31,13 @@ public class FetchSingleUserImpl implements FetchSingleUser {
     String lname;
     String email;
     String avatar;
-    //String avatar;
+
+
+
     @Override
     public String getUrl(){
-        return "https://reqres.in/api/users/"+url;
+        //return "https://reqres.in/api/users/"+url;
+        return osgiofSingleUse.getLinkData()+url;
     }
 
 
@@ -68,8 +77,17 @@ public class FetchSingleUserImpl implements FetchSingleUser {
 
     @Override
     public String getAvatar() {
-        String imgPath = avatar.replaceAll("https://reqres.in/img/faces/","/content/dam/ugamdemo/");
-        return imgPath;
+
+        String[] imgco = avatar.split("/faces/");
+        String count = imgco[1];
+
+        //String imgPath = avatar.replaceAll("https://reqres.in/img/faces/","/content/dam/ugamdemo/");
+        StringBuffer imgPath = new StringBuffer(avatar);
+        imgPath.delete(0,30).insert(0,osgiofSingleUse.getDamPathimage());
+        log.info(imgPath.toString());
+        return imgPath.toString();
+
+        //return imgPath;
     }
 
 }

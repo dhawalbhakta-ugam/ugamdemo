@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 
     public interface MuserList {
-        public List<Map<String,String>> getData() throws JSONException, IOException;
+        public List<Map<String,String>> getUssers() throws JSONException, IOException;
         public String getUrl();
         //public String getUrl();
     }

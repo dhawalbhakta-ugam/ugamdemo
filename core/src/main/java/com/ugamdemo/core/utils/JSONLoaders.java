@@ -1,60 +1,41 @@
 package com.ugamdemo.core.utils;
 
-import javax.net.ssl.HttpsURLConnection;
-        import java.io.BufferedReader;
+        import org.slf4j.ILoggerFactory;
+        import org.slf4j.Logger;
+        import org.slf4j.LoggerFactory;
         import java.io.IOException;
-        import java.io.InputStreamReader;
         import java.net.MalformedURLException;
         import java.net.URL;
+import java.util.Scanner;
 
 public class JSONLoaders {
-    private static final String USER_AGENT = "Mozilla/5.0";
+
+
+    private static final Logger log = LoggerFactory.getLogger(JSONLoaders.class);
 
     public static String readJson(String url) {
-
-        try {
-
-            URL requestURL = new URL(url);
-
-            HttpsURLConnection connection = (HttpsURLConnection) requestURL.openConnection();
-
-            connection.setRequestMethod("GET");
-
-            connection.setRequestProperty("User-Agent", USER_AGENT);
-
-            int responseCode = connection.getResponseCode();
-
-            if (responseCode == HttpsURLConnection.HTTP_OK) {
-
-                BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-
-                String inputLine;
-
-                StringBuffer response = new StringBuffer();
-
-                while ((inputLine = in.readLine()) != null) {
-
-                    response.append(inputLine);
-
-                }
-
-                in.close();
-
-                return response.toString();
-
+        StringBuffer output = new StringBuffer();
+        try{
+            log.info("before url");
+            URL url1 = new URL(url);
+            log.info("after url");
+            Scanner scanner = new Scanner(url1.openStream()); //error is occuring here
+            log.info("after scanner");
+            //BufferedReader br = new BufferedReader(new InputStreamReader(url1.openStream()));
+            String line = "";
+            while(scanner.hasNextLine()){
+                line = scanner.nextLine();
+                output.append(line);
             }
+            return output.toString();
+        }catch (MalformedURLException malformedURLException){
+            log.info("inside 1st catch");
 
-        } catch (MalformedURLException e) {
-
-            e.printStackTrace();
-
-        } catch (IOException e) {
-
-            e.printStackTrace();
+        }catch (IOException ioException){
+            log.info("inside 2nd catch");
 
         }
-
-        return "";
+        return "There was no data found";
 
     }
 }
