@@ -43,7 +43,9 @@ public class SingleUserImpl implements Singleuser {
     public String getMessage() throws IOException, JSONException {
 
         String response = JSONLoaders.readJson(getUrl());
+
         JSONObject jsonObject =  new JSONObject(response);
+
         Iterator x = jsonObject.keys();
         JSONArray jsonArray = new JSONArray();
         while (x.hasNext()){
@@ -75,7 +77,7 @@ public class SingleUserImpl implements Singleuser {
 
     @Override
     public String getAvatar() {
-        String imgPath = avatar.replaceAll("https://reqres.in/img/faces/","/content/dam/project/");
+        String imgPath = avatar.replaceAll("https://reqres.in/img/faces/","/content/dam/ugamdemo/");
         return imgPath;
     }
 

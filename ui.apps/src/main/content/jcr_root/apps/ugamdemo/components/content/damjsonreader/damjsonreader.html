@@ -1,0 +1,13 @@
+<h3>DAM Method</h3>
+
+<sly class="container bg-white" data-sly-use.Singleuser="com.ugamdemo.core.models.Singleuser"></sly>
+<h3 hidden style="text-align:center">${Singleuser.url}</h3>
+<h3 hidden style="text-align:center">${Singleuser.message}</h3>
+<div class="column cardlist-container">
+<img src="${Singleuser.avatar}" alt="NO Image found in DAM" style="text-align:center"/>
+<div>
+<span style="text-align:center">${Singleuser.fname}</span>
+<span style="text-align:center">${Singleuser.lname}</span>
+</div>
+<p style="text-align: center;" id="demo3">${Singleuser.email}</p>
+</div>
