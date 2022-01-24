@@ -2,10 +2,12 @@ package com.ugamdemo.core.models.Impl;
 
 
 import com.ugamdemo.core.models.MultiUser;
+import com.ugamdemo.core.models.MultiUserOsgi;
 import com.ugamdemo.core.utils.JSONLoaders;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -24,14 +26,17 @@ import org.slf4j.Logger;
 
     public class MultiUserImpl implements MultiUser{
 
+        @OSGiService
+        MultiUserOsgi multipleUserOsgi;
+
         private static final Logger log = (Logger) LoggerFactory.getLogger(MultiUserImpl.class);
 
         @Inject
         String url;
 
         @Override
-        public List<Map<String, String>> takeUser() throws JSONException, IOException {
-            String response = JSONLoaders.readJson(getUrl());
+        public List<Map<String, String>> takeUser () throws JSONException, IOException {
+            String response = JSONLoaders.readJson(getUrl(multipleUserOsgi.getMultipleLinkData()));
             JSONObject jsonObject =  new JSONObject(response);
 
             log.info(String.valueOf(jsonObject));
@@ -54,10 +59,9 @@ import org.slf4j.Logger;
         }
 
         @Override
-        public String getUrl() {
-            return "https://reqres.in/api/users?page="+url;
+        public String getUrl(String initialPath) {
+            return initialPath+url;
         }
     }
-
 
 

@@ -8,7 +8,8 @@ import java.util.Map;
 
     public interface MultiUser {
         public List<Map<String,String>> takeUser() throws JSONException, IOException;
-        public String getUrl();
+        //public String getUrl();
+        public String getUrl(String initialPath);
     }
 
 

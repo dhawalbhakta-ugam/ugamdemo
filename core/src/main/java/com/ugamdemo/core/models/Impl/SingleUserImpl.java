@@ -1,10 +1,12 @@
 package com.ugamdemo.core.models.Impl;
 
 import com.ugamdemo.core.models.Singleuser;
+import com.ugamdemo.core.models.SingleuserOsgi;
 import com.ugamdemo.core.utils.JSONLoaders;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
+import org.apache.sling.models.annotations.injectorspecific.OSGiService;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -22,7 +24,8 @@ public class SingleUserImpl implements Singleuser {
 
     final Logger log = LoggerFactory.getLogger(SingleUserImpl.class);
 
-
+  @OSGiService
+    SingleuserOsgi singleuserOsgi;
 
 
     @Inject
@@ -35,7 +38,7 @@ public class SingleUserImpl implements Singleuser {
 
     @Override
     public String getUrl(){
-        return "https://reqres.in/api/users/"+url;
+        return singleuserOsgi.getUserLinkData()+url;
     }
 
 
@@ -77,9 +80,18 @@ public class SingleUserImpl implements Singleuser {
 
     @Override
     public String getAvatar() {
-        String imgPath = avatar.replaceAll("https://reqres.in/img/faces/","/content/dam/ugamdemo/");
-        return imgPath;
+        String[] imgno = avatar.split("faces/");
+        String Dell = imgno[1];
+
+        // String imgPath = avatar.replaceAll("https://reqres.in/img/faces/","/content/dam/ugamdemo/");
+        // return imgPath;
+        //String imgPath = avatar.replaceAll(singleUserOsgi.getUserLinkImage(), "/content/dam/project/");
+
+
+        StringBuffer imgPath = new StringBuffer(avatar);
+        imgPath.delete(0,27).insert(0,singleuserOsgi.getDamPath());
+        log.info(imgPath.toString());
+        return imgPath.toString();
     }
 
 }
-
