@@ -15,13 +15,13 @@ import java.util.Map;
 @Model(adaptables = SlingHttpServletRequest.class,
         defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
-public class testimonialmulti {
+public class Testimonialmulti {
     @ChildResource
-    Resource testimonialmulti;
+    Resource testimonialmulti1;
     public List<Map<String, String>> gettestimonial() {
         List<Map<String, String>> factAreaMap = new ArrayList<>();
-        if(testimonialmulti!=null){
-            for(Resource fact : testimonialmulti.getChildren()){
+        if(testimonialmulti1!=null){
+            for(Resource fact : testimonialmulti1.getChildren()){
                 Map<String,String> factMap = new HashMap<>();
                 factMap.put("value",fact.getValueMap().get("value",String.class));
                 factMap.put("text",fact.getValueMap().get("text",String.class));

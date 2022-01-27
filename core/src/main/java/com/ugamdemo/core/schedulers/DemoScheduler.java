@@ -47,9 +47,6 @@ public class DemoScheduler implements Runnable {
         scheduleOptions.canRunConcurrently(true);
         scheduler.schedule(this, scheduleOptions);
 
-        //LOG.info("\n ---------Scheduler added----------");
-        /*ScheduleOptions scheduleOptionsNow = scheduler.NOW(3,5);
-        scheduler.schedule(this, scheduleOptionsNow);*/
     }
     @Override
     public void run() {

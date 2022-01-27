@@ -6,7 +6,6 @@ package com.ugamdemo.core.models.Impl;
         import org.apache.sling.api.resource.*;
         import org.osgi.service.component.annotations.Component;
         import org.osgi.service.component.annotations.Reference;
-       // import org.osgi.service.log.Logger;
         import org.osgi.service.metatype.annotations.Designate;
         import org.slf4j.Logger;
         import org.slf4j.LoggerFactory;
@@ -19,15 +18,12 @@ public class DateUpdateImpl implements DateUpdate{
 
      String path ="/content/ugamdemo/us/en/demoabc/jcr:content/root/container/container/schedulerdate";
 
-    private static final Logger LOG = (Logger) LoggerFactory.getLogger(DateUpdateImpl.class);
+    static final Logger LOG = LoggerFactory.getLogger(DateUpdateImpl.class);
     @Reference
     ResourceResolverFactory resourceResolverFactory;
-    /*   @Inject
-       ResourceResolve resourceResolve;*/
     @Override
     public String updateDate( String path) {
         try{
-            //ResourceResolver resourceResolver = new ResourceResolver();
             ResourceResolver serviceResourceResolver = ResolveUtils.newResolver(resourceResolverFactory);
             Session session = serviceResourceResolver.adaptTo(Session.class);
             Resource resource = serviceResourceResolver.getResource("/content/ugamdemo/us/en/demoabc/jcr:content/root/container/container/schedulerdate");
@@ -37,9 +33,10 @@ public class DateUpdateImpl implements DateUpdate{
             session.save();
             session.logout();
 
-        } catch (Exception e) {
-            //LOG.info(e.getMessage());
+        } catch (Exception e){
+
         }
+
            return path;
     }
 

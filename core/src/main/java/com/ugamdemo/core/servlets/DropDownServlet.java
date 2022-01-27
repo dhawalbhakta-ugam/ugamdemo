@@ -41,11 +41,11 @@ public class DropDownServlet extends SlingSafeMethodsServlet {
             List<Resource> list = new ArrayList<>();
             iterator.forEachRemaining(list::add);
             list.forEach(res -> {
-                //ValueMap valueMap = res.getValueMap();
+
                 String title = res.getName();
                 dropDownList.add(new KeyValue(title, title));
             });
-            @SuppressWarnings("unchecked")
+           
             DataSource ds =
                     new SimpleDataSource(
                             new TransformIterator(

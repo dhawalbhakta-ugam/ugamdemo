@@ -20,7 +20,7 @@ public class BrandImpl implements Brand{
     public List<String> getImgPath() {
         if(imgPath!=null)
         {
-            return new ArrayList<String>(imgPath);
+            return new ArrayList<>(imgPath);
         }
         else
         {

@@ -6,4 +6,5 @@ public interface CAConfig {
     public String getSiteLocale();
 
 
+
 }

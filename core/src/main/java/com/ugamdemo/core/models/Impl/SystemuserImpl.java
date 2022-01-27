@@ -19,7 +19,6 @@ import javax.jcr.Session;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-//import java.util.logging.Logger;
 import org.slf4j.Logger;
 
 @Model(adaptables = SlingHttpServletRequest.class,
@@ -31,7 +30,7 @@ import org.slf4j.Logger;
 public class SystemuserImpl implements Systemuser {
 
 
-    private static final Logger LOG = LoggerFactory.getLogger(Systemuser.class);
+    private static final Logger LOG = LoggerFactory.getLogger(SystemuserImpl.class);
 
     @Inject
     private ResourceResolverFactory resourceResolverFactory;
@@ -57,13 +56,13 @@ public class SystemuserImpl implements Systemuser {
             Session session = serviceResourceResolver.adaptTo(Session.class);
             Query listQuery = queryBuilder.createQuery(PredicateGroup.create(map), session);
             SearchResult result = listQuery.getResult();
-            List<Hit> Hits = result.getHits();
-            for(Hit hit : Hits){
+            List<Hit> hits = result.getHits();
+            for(Hit hit : hits){
                 listofusers = listofusers+ "\r\n" + hit.getProperties().get("rep:principalName", String.class);
             }
 
         }catch(Exception e){
-            LOG.info("\n exception",e.getMessage());
+
         }
         return listofusers;
     }
